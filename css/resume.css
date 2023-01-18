@@ -29,19 +29,19 @@ body {
 .nav-bar {
     position: fixed;
     background-color: rgba(53, 92, 125, 90%);
-    padding-bottom: 1rem;
+    padding-bottom: 1vw;
 }
 
 .top-links {
     display: flex;
     list-style: none;
-    gap: 10rem;
+    gap: 10vw;
 
     align-items: baseline;
     justify-content: space-between;
 
-    padding-right: 15rem;
-    padding-left: 5rem;
+    padding-right: 15vw;
+    padding-left: 5vw;
 }
 
 a {
@@ -63,7 +63,7 @@ a {
 }
 
 .nav-link {
-    font-size: 2rem;
+    font-size: 2vw;
     font-weight: 300;
     color: rgb(242, 242, 242);
 }
@@ -74,15 +74,15 @@ a:hover {
 }
 
 #home-button {
-    font-size: 3rem;
+    font-size: 3vw;
 }
 /* Nav_Bar End */
 
 /* Link Start */
 .link {
-    padding-top: 15rem;
-    padding-left: 15rem;
-    padding-right: 15rem;
+    padding-top: 15vw;
+    padding-left: 15vw;
+    padding-right: 15vw;
 }
 
 .lead {
@@ -93,7 +93,7 @@ a:hover {
 .link-h1 {
     display: inline;
 
-    font-size: 3rem;
+    font-size: 3vw;
     color: rgb(242, 242, 242);
 
     border-bottom: 2.5px;
@@ -107,7 +107,7 @@ a:hover {
 
 /* Resume Start */
 .embed {
-    margin-top: 5rem;
+    margin-top: 5vw;
 
     display: flex;
     justify-content: space-around;
@@ -121,8 +121,8 @@ img {
 
 /* Footer Start */
 footer {   
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
     display: flex;
     justify-content: space-around;
     color: rgb(242, 242, 242);
@@ -131,9 +131,9 @@ footer {
 
 /* Media Querry Start */
 .media {
-    padding-top: 10rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-top: 10vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
 
     color: rgb(242, 242, 242);
     font-size: 1.75;
