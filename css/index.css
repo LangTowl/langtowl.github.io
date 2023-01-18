@@ -30,13 +30,13 @@ body {
 
 /* Function Line Start*/
 .content {
-    width: 85%;
+    width: 90%;
     margin: 0 auto;
     padding-top: 10%;
 }
 
 h1 {
-    font-size: 5vw;
+    font-size: 5rem;
     color: rgb(242, 242, 242);
 }
 
@@ -55,16 +55,16 @@ h1 {
 
 /* Paragraph Start */
 .intro {
-    padding-top: 2vw;
-    padding-left: 5vw;
+    padding-top: 2rem;
+    padding-left: 5rem;
 
-    font-size: 2.5vw;
+    font-size: 2.5rem;
 
     color: rgb(242, 242, 242);
 }
 
 /* #welcome {
-    font-size: 4vw;
+    font-size: 4rem;
 } */
 
 .imp {
@@ -75,7 +75,7 @@ h1 {
 
 /* Nav Links Start */
 .links {
-    padding-top: 3vw;
+    padding-top: 3rem;
 }
 
 ul {
@@ -83,11 +83,11 @@ ul {
     display: flex;
     justify-content: space-around;
 
-    padding-right: 10vw;
+    padding-right: 10rem;
 }
 
 a {
-    font-size: 2vw;
+    font-size: 2rem;
     font-weight: 300;
     text-decoration: none;
     color: rgb(242,242,242);
@@ -115,19 +115,20 @@ a:hover {
 
 /* Footer Start */
 footer {   
-    padding-top: 5vw;
-    padding-bottom: 5vw;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
     display: flex;
     justify-content: space-around;
     color: rgb(242, 242, 242);
+    text-align: center;
 }
 /* Footer End */
 
 /* Media Querry Start */
 .media {
-    padding-top: 10vw;
-    padding-left: 3vw;
-    padding-right: 3vw;
+    padding-top: 10rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
 
     color: rgb(242, 242, 242);
     font-size: 1.75;
