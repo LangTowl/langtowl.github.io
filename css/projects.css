@@ -27,19 +27,19 @@ body {
 .nav-bar {
     position: fixed;
     background-color: rgba(53, 92, 125, 90%);
-    padding-bottom: 1rem;
+    padding-bottom: 1vm;
 }
 
 .top-links {
     display: flex;
     list-style: none;
-    gap: 10rem;
+    gap: 10vm;
 
     align-items: baseline;
     justify-content: space-between;
 
-    padding-right: 15rem;
-    padding-left: 5rem;
+    padding-right: 15vm;
+    padding-left: 5vm;
 }
 
 a {
@@ -61,7 +61,7 @@ a {
 }
 
 .nav-link {
-    font-size: 2rem;
+    font-size: 2vm;
     font-weight: 300;
     color: rgb(242, 242, 242);
 }
@@ -72,25 +72,25 @@ a:hover {
 }
 
 #home-button {
-    font-size: 3rem;
+    font-size: 3vm;
 }
 /* Nav_Bar End */
 
 /* Main Content Start */
 .main-content {
-    padding-top: 7.5rem;
-    padding-left: 15rem;
-    padding-right: 15rem;
+    padding-top: 7.5vm;
+    padding-left: 15vm;
+    padding-right: 15vm;
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 3vm;
     color: rgb(242, 242, 242);
-    padding-bottom: 3rem;
+    padding-bottom: 3vm;
 }
 
 .h1-top {
-    padding-top: 2.5rem;
+    padding-top: 2.5vm;
 }
 
 .parenth {
@@ -107,26 +107,26 @@ h1 {
 
 .status {
     border: none;
-    margin-left: 5rem;
+    margin-left: 5vm;
     color: rgb(242, 242, 242);
-    font-size: 2rem;
+    font-size: 2vm;
 }
 
 p {
-    margin-left: 2.5rem;
-    padding-left: 2.5rem;
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
+    margin-left: 2.5vm;
+    padding-left: 2.5vm;
+    padding-top: 2.5vm;
+    padding-bottom: 2.5vm;
 
-    font-size: 1.75rem;
-    line-height: 3rem;
+    font-size: 1.75vm;
+    line-height: 3vm;
     color: rgb(242, 242, 242);
 }
 
 .learn {
-    margin-left: 5rem;
+    margin-left: 5vm;
     color: rgb(242, 242, 242);
-    font-size: 2rem;
+    font-size: 2vm;
 
     display: inline;
 
@@ -141,12 +141,12 @@ p {
 }
 
 .skills {
-    padding-top: 2.5rem;
-    padding-left: 9.25rem;
+    padding-top: 2.5vm;
+    padding-left: 9.25vm;
 
     list-style: decimal-leading-zero;
     
-    font-size: 1.75rem;
+    font-size: 1.75vm;
     color: rgb(246, 114, 128);
 }
 
@@ -157,8 +157,8 @@ p {
 
 /* Footer Start */
 footer {   
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 5vm;
+    padding-bottom: 5vm;
     display: flex;
     justify-content: space-around;
     color: rgb(242, 242, 242);
@@ -167,9 +167,9 @@ footer {
 
 /* Media Querry Start */
 .media {
-    padding-top: 10rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-top: 10vm;
+    padding-left: 3vm;
+    padding-right: 3vm;
 
     color: rgb(242, 242, 242);
     font-size: 1.75;
