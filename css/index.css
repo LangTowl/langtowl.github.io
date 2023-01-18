@@ -34,7 +34,7 @@ body {
 }
 
 h1 {
-    font-size: 5vm;
+    font-size: 5rem;
     color: rgb(242, 242, 242);
 }
 
@@ -53,16 +53,16 @@ h1 {
 
 /* Paragraph Start */
 .intro {
-    padding-top: 2vm;
-    padding-left: 5vm;
+    padding-top: 2rem;
+    padding-left: 5rem;
 
-    font-size: 2.5vm;
+    font-size: 2.5rem;
 
     color: rgb(242, 242, 242);
 }
 
 /* #welcome {
-    font-size: 4vm;
+    font-size: 4rem;
 } */
 
 .imp {
@@ -73,7 +73,7 @@ h1 {
 
 /* Nav Links Start */
 .links {
-    padding-top: 3vm;
+    padding-top: 3rem;
 }
 
 ul {
@@ -81,11 +81,11 @@ ul {
     display: flex;
     justify-content: space-around;
 
-    padding-right: 10vm;
+    padding-right: 10rem;
 }
 
 a {
-    font-size: 2vm;
+    font-size: 2rem;
     font-weight: 300;
     text-decoration: none;
     color: rgb(242,242,242);
@@ -113,8 +113,8 @@ a:hover {
 
 /* Footer Start */
 footer {   
-    padding-top: 5vm;
-    padding-bottom: 5vm;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
     display: flex;
     justify-content: space-around;
     color: rgb(242, 242, 242);
@@ -123,9 +123,9 @@ footer {
 
 /* Media Querry Start */
 .media {
-    padding-top: 10vm;
-    padding-left: 3vm;
-    padding-right: 3vm;
+    padding-top: 10rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
 
     color: rgb(242, 242, 242);
     font-size: 1.75;
