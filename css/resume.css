@@ -185,4 +185,14 @@ footer {
         font-size: 2rem;
     }
 }
+
+@media screen and (max-width: 1400px) {
+    .nav-link {
+        font-size: 1.25rem;
+    }
+
+    #home-button {
+        font-size: 1.75rem;
+    }
+}
 /* Media Querry End */

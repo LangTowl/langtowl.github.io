@@ -155,4 +155,10 @@ footer {
         padding-left: 3rem;
     }
 }
+
+@media screen and (max-width: 1400px) {
+    h1 {
+        font-size: 3rem;
+    }
+}
 /* Media Querry End */
