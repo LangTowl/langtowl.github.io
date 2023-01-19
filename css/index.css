@@ -32,11 +32,11 @@ body {
 .content {
     width: 90%;
     margin: 0 auto;
-    padding-top: 5%;
+    padding-top: 2.5rem;
 }
 
 h1 {
-    font-size: 3.5rem;
+    font-size: 4rem;
     color: rgb(242, 242, 242);
 }
 
@@ -58,7 +58,7 @@ h1 {
     padding-top: 2rem;
     padding-left: 5rem;
 
-    font-size: 1.75rem;
+    font-size: 2.5rem;
 
     color: rgb(242, 242, 242);
 }
@@ -87,7 +87,7 @@ ul {
 }
 
 a {
-    font-size: 1.75rem;
+    font-size: 2rem;
     font-weight: 300;
     text-decoration: none;
     color: rgb(242,242,242);
@@ -115,7 +115,7 @@ a:hover {
 
 /* Footer Start */
 footer {   
-    padding-top: 5rem;
+    padding-top: 2.5rem;
     padding-bottom: 5rem;
     display: flex;
     justify-content: space-around;
