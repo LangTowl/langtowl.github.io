@@ -65,7 +65,7 @@ a {
 }
 
 .nav-link {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     font-weight: 300;
     color: rgb(242, 242, 242);
 }
@@ -76,7 +76,7 @@ a:hover {
 }
 
 #home-button {
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 /* Nav_Bar End */
 
@@ -122,7 +122,7 @@ p {
     padding-bottom: 2.5rem;
     padding-right: 5rem;
 
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     line-height: 3rem;
     color: rgb(242, 242, 242);
 }
@@ -150,7 +150,7 @@ p {
 
     list-style: decimal-leading-zero;
     
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     color: rgb(246, 114, 128);
 }
 
@@ -241,7 +241,7 @@ footer {
     }
 
     .learn {
-        font-size: 1.65rem;
+        font-size: 1.5rem;
     }
 }
 
