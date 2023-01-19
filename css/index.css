@@ -83,8 +83,6 @@ ul {
     list-style: none;
     display: flex;
     justify-content: space-around;
-
-    padding-right: 10rem;
 }
 
 a {
@@ -145,6 +143,16 @@ footer {
     .media {
         display: flex;
         justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    ul {
+        padding-left: 3rem;
     }
 }
 /* Media Querry End */

@@ -35,7 +35,7 @@ body {
 .top-links {
     display: flex;
     list-style: none;
-    gap: 4rem;
+    gap: 5rem;
 
     align-items: baseline;
     justify-content: space-between;
@@ -148,6 +148,33 @@ footer {
     .media {
         display: flex;
         justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .nav-bar {
+        gap: 1rem;
+    }
+
+    .top-links {
+        padding-left: 1rem;
+        padding-top: 1rem;
+    }
+
+    .nav-link {
+        font-size: 1.5rem;
+    }
+
+    #home-button {
+        font-size: 2rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .con-info {
+        font-size: 1.65rem;
     }
 }
 /* Media Querry End */

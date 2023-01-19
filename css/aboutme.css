@@ -35,7 +35,7 @@ body {
 .nav-ul {
     display: flex;
     list-style: none;
-    gap: 4rem;
+    gap: 5rem;
 
     align-items: baseline;
     justify-content: space-around;
@@ -110,7 +110,7 @@ h2 {
 }
 
 .top-h2 {
-    margin-top: 2.5rem;
+    margin-top: 2rem;
     margin-bottom: 1rem;
 
     font-size: 1.75rem;
@@ -212,6 +212,33 @@ footer {
     .media {
         display: flex;
         justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .nav-bar {
+        gap: 1rem;
+    }
+
+    .nav-ul {
+        padding-left: 1rem;
+        padding-top: 1rem;
+    }
+
+    h1 {
+        font-size: 2rem; 
+    }
+
+    .nav-link {
+        font-size: 1.5rem;
+    }
+
+    #home-button {
+        font-size: 2rem;
+    }
+
+    .p-graph {
+        font-size: 1.5rem;
     }
 }
 /* Media Querry End */
