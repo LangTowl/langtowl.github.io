@@ -35,7 +35,7 @@ body {
 .nav-ul {
     display: flex;
     list-style: none;
-    gap: 5rem;
+    gap: 3rem;
 
     align-items: baseline;
     justify-content: space-around;
@@ -63,7 +63,7 @@ a {
 }
 
 .nav-link {
-    font-size: 2rem;
+    font-size: 1.75rem;
     font-weight: 300;
     color: rgb(242, 242, 242);
 }
@@ -81,8 +81,8 @@ a:hover {
 /* Main Content Start */
 .main-content {
     padding-top: 7.5rem;
-    padding-left: 15rem;
-    padding-right: 15rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
 }
 
 .lead {
