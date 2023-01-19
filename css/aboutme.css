@@ -35,10 +35,10 @@ body {
 .nav-ul {
     display: flex;
     list-style: none;
-    gap: 10rem;
+    gap: 5rem;
 
     align-items: baseline;
-    justify-content: space-between;
+    justify-content: space-around;
 
     padding-right: 15rem;
     padding-left: 5rem;
