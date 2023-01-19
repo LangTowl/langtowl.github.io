@@ -30,6 +30,8 @@ body {
     position: fixed;
     background-color: rgba(53, 92, 125, 90%);
     padding-bottom: 1rem;
+
+    width: 100%;
 }
 
 .top-links {
@@ -41,6 +43,7 @@ body {
     justify-content: space-between;
 
     padding-left: 5rem;
+    padding-right: 5rem;
 }
 
 a {
@@ -85,7 +88,7 @@ a:hover {
 .con-info {
     padding-top: 3rem;
 
-    font-size: 2rem;
+    font-size: 1.75rem;
     color: rgb(242, 242, 242);
     line-height: 2.5;
     text-align: center;
@@ -99,7 +102,7 @@ a:hover {
 h1 {
     display: inline;
 
-    font-size: 3rem;
+    font-size: 2.75rem;
     color: rgb(242, 242, 242);
 
     padding-left: 10px;

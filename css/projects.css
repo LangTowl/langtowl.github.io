@@ -30,6 +30,8 @@ body {
     position: fixed;
     background-color: rgba(53, 92, 125, 90%);
     padding-bottom: 1rem;
+
+    width: 100%;
 }
 
 .top-links {
@@ -41,6 +43,7 @@ body {
     justify-content: space-between;
 
     padding-left: 5rem;
+    padding-right: 5rem;
 }
 
 a {
@@ -117,6 +120,7 @@ p {
     padding-left: 2.5rem;
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
+    padding-right: 5rem;
 
     font-size: 1.75rem;
     line-height: 3rem;
