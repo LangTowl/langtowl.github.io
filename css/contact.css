@@ -35,12 +35,11 @@ body {
 .top-links {
     display: flex;
     list-style: none;
-    gap: 10rem;
+    gap: 4rem;
 
     align-items: baseline;
     justify-content: space-between;
 
-    padding-right: 15rem;
     padding-left: 5rem;
 }
 
@@ -63,7 +62,7 @@ a {
 }
 
 .nav-link {
-    font-size: 2rem;
+    font-size: 1.75rem;
     font-weight: 300;
     color: rgb(242, 242, 242);
 }
@@ -80,13 +79,13 @@ a:hover {
 
 /* Contact Info Start */
 .contact {
-    padding-top: 15rem;
+    padding-top: 10rem;
 }
 
 .con-info {
     padding-top: 3rem;
 
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: rgb(242, 242, 242);
     line-height: 2.5;
     text-align: center;

@@ -32,7 +32,7 @@ body {
 .content {
     width: 90%;
     margin: 0 auto;
-    padding-top: 2.5rem;
+    padding-top: 5rem;
 }
 
 h1 {
@@ -58,7 +58,7 @@ h1 {
     padding-top: 2rem;
     padding-left: 5rem;
 
-    font-size: 2.5rem;
+    font-size: 2rem;
 
     color: rgb(242, 242, 242);
 }
@@ -76,6 +76,7 @@ h1 {
 /* Nav Links Start */
 .links {
     padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 ul {
