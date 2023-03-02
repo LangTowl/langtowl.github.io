@@ -1,0 +1,164 @@
+/* Setup Start */
+* {
+    /* Alternative Box Model */
+    box-sizing: border-box;
+
+    /* Reset Padding & Margin On All Elements */
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 18px;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    line-height: 1.55;
+
+    min-height: 100%;
+    min-width: 100%;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    display: inline;
+
+    background-color: rgb(53, 92, 125);
+}
+/* Setup End */
+
+/* Function Line Start*/
+.content {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 5rem;
+}
+
+h1 {
+    font-size: 4rem;
+    color: rgb(242, 242, 242);
+}
+
+.parenth {
+    color: rgb(246, 114, 128);
+}
+
+.param {
+    color: rgb(192, 108,132);
+}
+
+.curly {
+    color: rgb(192, 108,132);
+}
+/* Function Line End*/
+
+/* Paragraph Start */
+.intro {
+    padding-top: 2rem;
+    padding-left: 5rem;
+
+    font-size: 2rem;
+
+    color: rgb(242, 242, 242);
+}
+
+/* #welcome {
+    font-size: 4rem;
+} */
+
+.imp {
+    color: rgb(205, 190, 120);
+    font-weight: 900;
+}
+/* Paragraph End */
+
+/* Nav Links Start */
+.links {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+a {
+    font-size: 2rem;
+    font-weight: 300;
+    text-decoration: none;
+    color: rgb(242,242,242);
+
+    padding-left: 10px;
+    padding-right: 10px;
+
+    
+    border-bottom: 7.5px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+
+    border-style: solid;
+    border-radius: 10px;
+
+    border-image: linear-gradient(45deg, #F67280, #C06C84) 1;
+}
+
+a:hover {
+    background-image: linear-gradient(45deg,#F67280, #C06C84);
+    color: rgb(53, 92, 125);
+}
+/* Nav Links End */
+
+/* Footer Start */
+footer {   
+    padding-top: 2.5rem;
+    padding-bottom: 5rem;
+    display: flex;
+    justify-content: space-around;
+    color: rgb(242, 242, 242);
+    text-align: center;
+}
+/* Footer End */
+
+/* Media Querry Start */
+.media {
+    padding-top: 10rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+
+    color: rgb(242, 242, 242);
+    font-size: 1.75;
+    text-align: center;
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .content {
+        display: none;
+    }
+
+    .media {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    ul {
+        padding-left: 3rem;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    h1 {
+        font-size: 3rem;
+    }
+}
+/* Media Querry End */
