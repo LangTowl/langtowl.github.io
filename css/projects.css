@@ -137,11 +137,11 @@ p {
     padding-left: 10px;
     padding-right: 10px;
 
-    border: 0px;
+    /* border: 0px;
     border-left: 5px;
     border-right: 5px;
     border-style: solid;
-    border-image: linear-gradient(90deg, #F67280, #C06C84) 1;
+    border-image: linear-gradient(90deg, #F67280, #C06C84) 1; */
 }
 
 .skills {
