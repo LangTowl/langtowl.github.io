@@ -24,7 +24,7 @@ body {
 
     display: inline;
 
-    background-color: rgb(53, 92, 125);
+    background-color: rgb(22, 22, 29);
 }
 /* Setup End */
 
@@ -40,16 +40,20 @@ h1 {
     color: rgb(242, 242, 242);
 }
 
+.name {
+    color: rgb(196, 88, 110);
+}
+
 .parenth {
-    color: rgb(246, 114, 128);
+    color: rgb(255, 255, 255);
 }
 
 .param {
-    color: rgb(192, 108,132);
+    color: rgb(78, 157, 169);
 }
 
 .curly {
-    color: rgb(192, 108,132);
+    color: rgb(155, 155, 160);
 }
 /* Function Line End*/
 
@@ -68,7 +72,7 @@ h1 {
 } */
 
 .imp {
-    color: rgb(205, 190, 120);
+    color: rgb(159, 111, 193);
     font-weight: 900;
 }
 /* Paragraph End */
@@ -95,7 +99,7 @@ a {
     padding-right: 10px;
 
     
-    border-bottom: 7.5px;
+    border-bottom: 3.5px;
     border-top: 0px;
     border-left: 0px;
     border-right: 0px;
@@ -103,12 +107,13 @@ a {
     border-style: solid;
     border-radius: 10px;
 
-    border-image: linear-gradient(45deg, #F67280, #C06C84) 1;
+    border-image: linear-gradient(45deg, #C4586E, #C4586E) 1;
 }
 
 a:hover {
-    background-image: linear-gradient(45deg,#F67280, #C06C84);
-    color: rgb(53, 92, 125);
+    /* background-image: linear-gradient(45deg,#C4586E, #C4586E); */
+    color: rgb(78, 157, 169);
+    font-weight: 900;
 }
 /* Nav Links End */
 

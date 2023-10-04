@@ -21,14 +21,14 @@ body {
 
     display: inline;
 
-    background-color: rgb(53, 92, 125);
+    background-color: rgb(22, 22, 29);
 }
 /* Setup End */
 
 /* Nav-Bar Start */
 .nav-bar {
     position: fixed;
-    background-color: rgba(53, 92, 125, 90%);
+    background-color: rgba(22, 22, 29, 90%);
     padding-bottom: 1rem;
 
     width: 100%;
@@ -50,7 +50,7 @@ a {
     text-decoration: none;
     color: rgb(242, 242, 242);
 
-    border-bottom: 7.5px;
+    border-bottom: 3.5px;
     border-top: 0px;
     border-left: 0px;
     border-right: 0px;
@@ -71,8 +71,9 @@ a {
 }
 
 a:hover {
-    background-image: linear-gradient(45deg,#F67280, #C06C84);
-    color: rgb(53, 92, 125);
+    /* background-image: linear-gradient(45deg,#C4586E, #C4586E); */
+    color: rgb(78, 157, 169);
+    font-weight: 900;
 }
 
 #home-button {
@@ -97,13 +98,6 @@ a:hover {
 
     font-size: 2rem;
     color: rgb(242, 242, 242);
-
-    border-bottom: 2.5px;
-    border-top: 0px;
-    border-left: 0px;
-    border-right: 0px;
-    border-style: solid;
-    border-image: linear-gradient(45deg, #F67280, #C06C84) 1;
 }
 /* Link End */
 
