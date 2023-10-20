@@ -243,21 +243,16 @@ footer {
 }
 
 @media screen and (max-width: 500px) { 
+    html {
+        font-size: 10px;
+    }
+
     .nav-bar {
-        text-align:center;
+        text-align: center;
     }
 
     .nav-link {
         padding-top: 1rem;
-    }
-    
-    .main-content {
-        padding-top: 10rem;
-        padding-left: 1rem;
-    }
-
-    html {
-        font-size: 10px;
     }
 
     .nav-ul-mobile-false {
@@ -269,8 +264,13 @@ footer {
         padding-left: 10px;
         
     }
-    
+
     #home-button {
+        padding-left: 1rem;
+    }
+    
+    .main-content {
+        padding-top: 10rem;
         padding-left: 1rem;
     }
 
