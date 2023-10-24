@@ -72,94 +72,77 @@ a:hover {
 }
 /* Navigation Bar End */
 
-/* Projects Start */
+/* About Me Start */
+.about-me {
+    /* border-style: dotted;
+    border-color: blue; */
+
+    display: flex;
+    justify-content: space-evenly;
+
+    margin-top: 1rem;
+
+    font-size: 2rem;
+    font-weight: 500;
+    color: rgb(242,242,242);
+}
+
 .group {
     /* border-style: dotted;
     border-color: pink;  */
-
-    margin-top: 2rem;
 }
 
 .group-label {
-    font-size: 1.5rem;
+    /* border-style: dotted;
+    border-color: yellow; */
+
+    font-size: 1.25rem;
 }
 
-.project-name {
+.angle {
+    color: rgb(78, 157, 169);
+}
+
+.topic {
     color: rgb(196, 88, 110);
 }
 
-.parenthesis {
-    color: rgb(242,242,242);
-}
-
-.project-description {
-    color: rgb(78, 157, 169);
-}
-
-.bracket {
-    color: rgb(155, 155, 160);
-}
-
-.group-container {
-    /* border-style: dotted;
-    border-color: red;  */
-
-    margin-left: 1.5rem;
-}
-
-.group-status {
-    font-size: 1.25rem;
-    margin-top: 1rem;
-}
-
-.status {
-    color: rgb(159, 111, 193);
-}
-
-.progress {
-    color: rgb(78, 157, 169);
-}
-
-.project {
-    margin-top: 1rem;
-    margin-left: 1.5rem;
-
-    color: rgb(242,242,242);
-}
-
-.external-link {
+.content {
     /* border-style: dotted;
     border-color: pink;  */
 
-    margin-top: 1rem;
-
-    font-size: 1rem;
-
-    display: flex;
-    justify-content: space-evenly; 
-}
-
-.skills {
+    margin-left: 1.5rem;
+    padding-left: 1.5rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
 
-    font-size: 1.25rem;
-    font-weight: 700;
+    border-top: 0px;
+    border-bottom: 0px;
+    border-left: 3.5px;
+    border-right: 0px;
+
+    border-style: solid;
+    border-color: rgb(78, 157, 169);
+
+    color: rgb(242,242,242);
+}
+/* About Me End */
+
+/* Positions Start */
+.position-container {
+    margin-left: 5rem;
 }
 
-.skills-learned {
-    margin-left: 3rem;
-}
-
-.skills-list {
+.positions {
     list-style: decimal-leading-zero;
     color: rgb(159, 111, 193);
 }
 
-.skill {
+.position {
     color: rgb(242,242,242);
+    line-height: 2;
 }
-/* Projects End */
+/* Positions End */
 
 /* Footer Start */
 footer {
