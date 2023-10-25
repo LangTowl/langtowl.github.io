@@ -1,0 +1,139 @@
+/* Setup Start */
+* {
+    /* Alternative Box Model */
+    box-sizing: border-box;
+
+    /* Reset Padding & Margin On All Elements */
+    padding: 0;
+    margin: 0;
+    
+}
+
+html {
+    font-size: 18px;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    line-height: 1.55;
+
+    background-color: rgb(22, 22, 29);
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.bucket{
+    /* border-style: dotted;
+    border-color: green; */
+
+    display: flex;
+    flex-direction: column;
+
+    max-width: 1000px;
+    width: 50%;
+}
+/* Setup End */
+
+/* Navigation Bar Start */
+.button {
+    /* border-style: dotted;
+    border-color: red; */
+
+    margin-top: 1rem;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+
+    list-style: none;
+}
+
+a {
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-decoration: none;
+    color: rgb(242,242,242);
+
+    border-top: 0px;
+    border-bottom: 3.5px;
+    border-left: 0px;
+    border-right: 0px;
+
+    border-style: solid;
+    border-color: rgb(196, 88, 110);
+}
+
+a:hover {
+    opacity: 50%;
+    border-color: rgb(78, 157, 169);
+}
+/* Navigation Bar End */
+
+/* Contact Info Start */
+.list {
+    margin-top: 5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-size: 1.5rem;
+    line-height: 2.25;
+
+    color: rgb(242, 242, 242);
+}
+/* Contact Info Start */
+
+/* Footer Start */
+footer {
+    display: flex;
+    justify-content: space-evenly;    
+}
+
+.footer {
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+
+    color: rgb(242, 242, 242);
+}
+/* Footer End */
+
+/* Out Of Bounds Start */
+.out-of-bounds {
+    display: none;
+}
+/* Out Of Bounds Start */
+
+/* Media Start */
+@media screen and (max-width: 349px) {
+    .out-of-bounds {
+        width: 90%;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+
+        color: rgb(242, 242, 242);
+    }
+
+    .bucket {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 350px) and (max-width: 849px) {
+    a {
+        font-size: 0.75rem;
+    }
+
+    .bucket {
+        width: 90%;
+    }
+
+    .text {
+        font-size: 0.75rem;
+    }
+}
+/* Media End */

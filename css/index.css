@@ -1,0 +1,317 @@
+/* Setup Start */
+* {
+    /* Alternative Box Model */
+    box-sizing: border-box;
+
+    /* Reset Padding & Margin On All Elements */
+    padding: 0;
+    margin: 0;
+    
+}
+
+html {
+    font-size: 18px;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    line-height: 1.55;
+
+    background-color: rgb(22, 22, 29);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+html, body{
+    height: 100vh;
+}
+
+.bucket{
+    /* border-style: dotted;
+    border-color: green; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    max-width: 1000px;
+    width: 50%;
+}
+/* Setup End */
+
+/* Function Start */
+.function {
+    /* border-style: dotted;
+    border-color: red; */
+
+    display: flex;
+
+    font-size: 2.5rem;
+    animation: fadeInAnimationTranslate 1.5s;
+    animation-fill-mode: forwards;
+}
+
+.name {
+    color: rgb(196, 88, 110);
+}
+
+.parenthesis {
+    color: rgb(255, 255, 255);
+}
+
+.major {
+    color: rgb(78, 157, 169);
+}
+
+.bracket {
+    color: rgb(155, 155, 160);
+}
+/* Function Header End */
+
+/* Intro Paragraog Start */
+.intro {
+    /* border-style: dotted;
+    border-color: purple; */
+
+    margin-left: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    font-size: 1.5rem;
+    color: rgb(242, 242, 242);
+    animation: fadeInAnimationTranslate 1.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+}
+
+.bold {
+    color: rgb(159, 111, 193);
+    font-weight: 900;
+}
+/* Intro Paragraog End */
+
+/* Links Start */
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    
+    list-style: none;
+}
+
+a {
+    font-size: 2rem;
+    font-weight: 300;
+    text-decoration: none;
+    color: rgb(242,242,242);
+
+    border-top: 0px;
+    border-bottom: 3.5px;
+    border-left: 0px;
+    border-right: 0px;
+
+    border-style: solid;
+    border-color: rgb(196, 88, 110);
+}
+
+.links {
+    /* border-style: dotted;
+    border-color: yellow; */
+
+    margin-top: 3rem;
+    animation: fadeInAnimationTranslate 1.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+a:hover {
+    opacity: 50%;
+    border-color: rgb(78, 157, 169);
+}
+/* Links End */
+
+/* Footer Start */
+footer {
+    display: flex;
+    justify-content: space-evenly;    
+}
+
+.footer {
+    margin-top: 3rem;
+
+    color: rgb(242, 242, 242);
+    animation: fadeInAnimation 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+/* Footer End */
+
+/* Out Of Bounds Start */
+.out-of-bounds {
+    display: none;
+}
+/* Out Of Bounds Start */
+
+/* Media Start */
+@media screen and (max-width: 349px) {
+    .out-of-bounds {
+        width: 90%;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+
+        color: rgb(242, 242, 242);
+    }
+
+    .bucket {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 350px) and (max-width: 849px) {
+    .function {
+        font-size: 1rem;
+    }
+
+    a {
+        font-size: 1rem;
+    }
+
+    .intro {
+        font-size: 1rem;
+    }
+
+    footer {
+        font-size: 0.75rem;
+    }
+
+    .bucket {
+        width: 90%
+    }
+}
+
+@media screen and (min-width: 850px) and (max-width: 1049px) {
+    .function {
+        font-size: 1.65rem;
+    }
+
+    .intro {
+        font-size: 1rem;
+    }
+
+    a {
+        font-size: 1.1rem;
+    }
+
+    footer {
+        font-size: 0.8;
+    }
+
+    .bucket {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 850px) and (max-width: 1049px) {
+    .function {
+        font-size: 1.75rem;
+    }
+
+    .intro {
+        font-size: 1.075rem;
+    }
+
+    a {
+        font-size: 1.3rem;
+    }
+
+    footer {
+        font-size: 0.85;
+    }
+
+    .bucket {
+        width: 65%;
+    }
+}
+
+@media screen and (min-width: 1050px) and (max-width: 1299px) {
+    .function {
+        font-size: 2rem;
+    }
+
+    .intro {
+        font-size: 1.15rem;
+    }
+
+    a {
+        font-size: 1.5rem;
+    }
+
+    footer {
+        font-size: 0.9;
+    }
+
+    .bucket {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 1300px) and (max-width: 1560px) {
+    .function {
+        font-size: 2.25rem;
+    }
+
+    .intro {
+        font-size: 1.25rem;
+    }
+
+    a {
+        font-size: 1.75rem;
+    }
+
+    footer {
+        font-size: 0.95;
+    }
+
+    .bucket {
+        width: 55%;
+    }
+}
+
+/* Media End */
+
+/* Keyframes Animation Start */
+@keyframes fadeInAnimationTranslate{ 
+    /*animation to fade in. goes from "from" css attributes 
+    to "to" css attributes within the alloted time specified within the class*/
+
+    from{
+        visibility: hidden;
+        opacity: 0;
+        transform: rotateX(-20deg);
+        transform: translate(20%);
+        
+    }
+    to{
+        visibility: visible;
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+@keyframes fadeInAnimation{ 
+    /*animation to fade in. goes from "from" css attributes 
+    to "to" css attributes within the alloted time specified within the class*/
+
+    from{
+        visibility: hidden;
+        opacity: 0;
+        transform: rotateX(-20deg);
+    }
+    to{
+        visibility: visible;
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+/* Keyframes Animation Start */
