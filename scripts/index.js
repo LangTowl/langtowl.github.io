@@ -6,7 +6,7 @@ button.addEventListener("click", function() {
 
     var grid_container = document.querySelector(".grid_container");
     var toggle_folders = document.querySelector(".folder");
-
+    
     if (is_expanded) {
         grid_container.style.gridTemplateColumns = "10% 90%";
         toggle_folders.style.display = "none";

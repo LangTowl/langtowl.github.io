@@ -135,6 +135,10 @@ body {
 .folder_button:active {
   background-color: #1E1E1E;
 }
+
+#about_me_folder_contents {
+  display: none;
+}
 /* File Manager End */
 
 #main_content {

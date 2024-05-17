@@ -19,14 +19,19 @@
 </head>
 <body>
     <div class = "grid_container">
+        <!-- Menue Bar Start -->
         <div class = "grid_item" id = "menu_bar">
             <button class = "home_button" id = "home_button_listener">
                 <img src= "assets/svg/lato logo.svg" alt="">
             </button>
         </div>
+        <!-- Menue Bar End -->
 
+        <!-- Page Selected Start -->
         <div class = "grid_item" id = "page_selected">2</div>
+        <!-- Page Selected End -->
 
+        <!-- File Manager Start -->
         <div class = "grid_item" id = "file_manager">
             <button class = "folder_button" id = "folder_button_about_me_listener">
                 <div class = "folder">
@@ -37,14 +42,24 @@
                     <p>About Me</p>
                 </div>
             </button>
-        </div>
 
+            <div class = "fodler_contents" id = "about_me_folder_contents">
+                <Button>
+                    Text
+                </Button>
+            </div>
+        </div>
+        <!-- File Manager End -->
+
+        <!-- Main Content Start -->
         <div class = "grid_item" id = "main_content">
             <script src = "scripts/main_content.js"></script>
         </div>
+        <!-- Main Content End -->
     </div>
 
     <script src = "scripts/index.js"></script>
     <script src = "scripts/file_manager.js"></script>
+    <script src = "scripts/about_me_folder.js"></script>
 </body>
 </html>
