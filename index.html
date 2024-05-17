@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Document Setup Start -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Document Setup End -->
+
+    <!-- Font Inclusion Start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Font Inclusion End -->
+
+    <!-- File Inclusion Start -->
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <!-- Fule Inclusion End -->
+</head>
+<body>
+    <div class = "grid_container">
+        <div class = "grid_item" id = "menu_bar">
+            <button class = "home_button" id = "home_button_listener">
+                <img src= "assets/svg/lato logo.svg" alt="">
+            </button>
+        </div>
+
+        <div class = "grid_item" id = "page_selected">2</div>
+
+        <div class = "grid_item" id = "file_manager">
+            <button class = "folder_button" id = "folder_button_about_me_listener">
+                <div class = "folder">
+                    <img src = "/assets/svg/chevron right icon.svg" alt= "" id = "about_me_chevron">
+    
+                    <img src = "/assets/svg/folder icon.svg" alt= "">
+
+                    <p>About Me</p>
+                </div>
+            </button>
+        </div>
+
+        <div class = "grid_item" id = "main_content">
+            <script src = "scripts/main_content.js"></script>
+        </div>
+    </div>
+
+    <script src = "scripts/index.js"></script>
+    <script src = "scripts/file_manager.js"></script>
+</body>
+</html>
