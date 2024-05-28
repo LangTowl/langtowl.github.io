@@ -1,104 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <head>
-    <!-- Document Setup Start -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- Document Setup End -->
+    <!-- Welcome Page Address Start -->
+    <title>Lang Towl: CE - Welcome</title>
+    <!-- Welcome Page Address Start -->
 
     <!-- Font Inclusion Start -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- Font Inclusion End -->
 
-    <!-- File Inclusion Start -->
-    <link rel="stylesheet" type="text/css" href="css/index.css">
-    <!-- Fule Inclusion End -->
+    <!-- File Inlcusion Start -->
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <!-- File Inclusion End -->
+
 </head>
+
 <body>
-    <div class = "grid_container">
-        <!-- Menue Bar Start -->
-        <div class = "grid_item" id = "menu_bar">
-            <button class = "home_button" id = "home_button_listener">
-                <img src= "assets/svg/lato logo.svg" alt="">
-            </button>
+    <div class="bucket">
+        <div class="function">
+            <span class="name">lang_towl</span>
+            <span class="parenthesis">(</span>
+            <span class="major" >computer_engineer</span>
+            <span class="parenthesis">)</span>
+            <span class="bracket">{</span>
+        </div> 
+
+        <div class="intro" style="visibility: hidden;">
+            <p>
+                <span id="welcome">Welcome!</span> My name is <span class="bold">Lang Towl</span>. I am a junior
+                <span class="bold">Computer Engineering</span> student at Florida Polytechnic University.
+                My studies are concentrated in <span class="bold">Machine Intelligence</span>. 
+                To learn more, please explore the following links:
+            </p>
         </div>
-        <!-- Menue Bar End -->
 
-        <!-- Page Selected Start -->
-        <div class = "grid_item" id = "page_selected">2</div>
-        <!-- Page Selected End -->
-
-        <!-- File Manager Start -->
-        <div class = "grid_item" id = "file_manager">
-            <button class = "folder_button" id = "folder_button_about_me_listener">
-                <div class = "folder">
-                    <img src = "/assets/svg/chevron right icon.svg" alt= ""  class = "folder_chevron" id = "about_me_chevron">
-    
-                    <img src = "/assets/svg/folder icon.svg" alt= "">
-
-                    <p>About Me</p>
-                </div>
-            </button>
-
-            <div class = "folder_contents" id = "about_me_folder_contents">
-                <Button class = "folder_sub_button">
-                    Filler Text One
-                </Button>
-                <Button class = "folder_sub_button">
-                    Filler Text Two
-                </Button>
-                <Button class = "folder_sub_button">
-                    Filler Text Three
-                </Button>
-                <Button class = "folder_sub_button">
-                    Filler Text Four
-                </Button>
-            </div>
-
-            <button class = "folder_button" id = "folder_button_projects_listener">
-                <div class = "folder">
-                    <img src = "/assets/svg/chevron right icon.svg" alt= "" class = "folder_chevron" id = "projects_chevron">
-    
-                    <img src = "/assets/svg/folder icon.svg" alt= "">
-
-                    <p>My Projects</p>
-                </div>
-            </button>
-
-            <button class = "folder_button" id = "folder_button_resume_listener">
-                <div class = "folder">
-                    <img src = "/assets/svg/chevron right icon.svg" alt= "" class = "folder_chevron" id = "resume_chevron">
-    
-                    <img src = "/assets/svg/folder icon.svg" alt= "">
-
-                    <p>My Resume</p>
-                </div>
-            </button>
-
-            <button class = "folder_button" id = "folder_button_contact_listener">
-                <div class = "folder">
-                    <img src = "/assets/svg/chevron right icon.svg" alt= "" class = "folder_chevron" id = "contact_chevron">
-    
-                    <img src = "/assets/svg/folder icon.svg" alt= "">
-
-                    <p>Contact Me</p>
-                </div>
-            </button>
+        <div class="function">
+            <span class="bracket">}</span>
         </div>
-        <!-- File Manager End -->
 
-        <!-- Main Content Start -->
-        <div class = "grid_item" id = "main_content">
-            <script src = "scripts/main_content.js"></script>
+        <div class="links" style="visibility: hidden;">
+            <ul>
+                <li><a href="html/about.html">about</a></li>
+                <li><a href="html/projects.html">projects</a></li>
+                <li><a href="html/resume.html">resume</a></li>
+                <li><a href="html/contact.html">contact</a></li>
+            </ul>
         </div>
-        <!-- Main Content End -->
+
+        <div class="footer" style="visibility: hidden;">
+            <footer>
+                A Project By Lang Towl - 2023
+            </footer>
+
+            <footer>
+                Version 3
+            </footer>
+        </div>
     </div>
 
-    <script src = "scripts/index.js"></script>
-    <script src = "scripts/file_manager.js"></script>
-    <script src = "scripts/about_me_folder.js"></script>
+    <div class="out-of-bounds">
+        <p>
+            Uh oh... It looks like this page hasn't been optimized for
+            mobile browsing. Please view this page on a larger device.
+        </p>
+
+        <div class="footer">
+            <footer>
+                A Project By Lang Towl - 2023
+            </footer>
+
+            <footer>
+                Version 3
+            </footer>
+        </div>
+    </div>
 </body>
-</html>
