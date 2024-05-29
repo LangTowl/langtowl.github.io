@@ -22,6 +22,38 @@ button.addEventListener("click", function() {
         folders.forEach(folder => folder.style.display = "flex"); 
 
         console.log("Expand file manager");
+
+        // FETCH FOLDER STATES ABOUT ME START
+        if (about_me_folder_open == true) {
+            about_me_folder_contents.style.display = "flex";
+        } else {
+            about_me_folder_contents.style.display = "none";
+        }
+        // FETCH FOLDER STATES ABOUT ME END
+
+        // FETCH FOLDER STATES PROJECTS START
+        if (projects_folder_open == true) {
+            projects_folder_contents.style.display = "flex";
+        } else {
+            projects_folder_contents.style.display = "none";
+        }
+        // FETCH FOLDER STATES PROJECTS END
+
+        // FETCH RESUME STATES PROJECTS START
+        if (resume_folder_open == true) {
+            resume_folder_contents.style.display = "flex";
+        } else {
+            resume_folder_contents.style.display = "none";
+        }
+        // FETCH RESUME STATES PROJECTS END
+
+        // FETCH RESUME STATES PROJECTS START
+        if (contact_me_folder_open == true) {
+            contact_me_folder_contents.style.display = "flex";
+        } else {
+            contact_me_folder_contents.style.display = "none";
+        }
+        // FETCH RESUME STATES PROJECTS END
     }
 
     is_expanded = !is_expanded;
@@ -31,6 +63,7 @@ button.addEventListener("click", function() {
 // ABOUT ME FOLDER START
 var about_me_folder_open = false;
 var about_me_folder = document.getElementById("folder_button_about_me_listener")
+var about_me_folder_contents = document.getElementById("about_me_folder_contents");
 
 about_me_folder.addEventListener("click", function() {
     about_me_folder_open = ! about_me_folder_open;
@@ -43,10 +76,14 @@ about_me_folder.addEventListener("click", function() {
         var chevron_down_image_path = "assets/svg/chevron down icon.svg";
                 
         about_me_chevron_image.src = chevron_down_image_path;
+
+        about_me_folder_contents.style.display = "flex";
     } else {
         var chevron_right_image_path = "assets/svg/chevron right icon.svg";
                 
         about_me_chevron_image.src = chevron_right_image_path;
+
+        about_me_folder_contents.style.display = "none";
     }
     // ABOUT ME FOLDER IMAGE AND VISIBILITY START
 })
@@ -55,6 +92,7 @@ about_me_folder.addEventListener("click", function() {
 // PROJECTS FOLDER START
 var projects_folder_open = false;
 var projects_folder = document.getElementById("folder_button_projects_listener")
+var projects_folder_contents = document.getElementById("projects_folder_contents");
 
 projects_folder.addEventListener("click", function() {
     projects_folder_open = !projects_folder_open;
@@ -67,10 +105,15 @@ projects_folder.addEventListener("click", function() {
         var chevron_down_image_path = "assets/svg/chevron down icon.svg";
                 
         projects_chevron_image.src = chevron_down_image_path;
+
+        projects_folder_contents.style.display = "flex";
+
     } else {
         var chevron_right_image_path = "assets/svg/chevron right icon.svg";
                 
         projects_chevron_image.src = chevron_right_image_path;
+
+        projects_folder_contents.style.display = "none";
     }
     // PROJECTS FOLDER IMAGE AND VISIBILITY START
 })
@@ -79,6 +122,7 @@ projects_folder.addEventListener("click", function() {
 // RESUME FOLDER START
 var resume_folder_open = false;
 var resume_folder = document.getElementById("folder_button_resume_listener")
+var resume_folder_contents = document.getElementById("resume_folder_contents");
 
 resume_folder.addEventListener("click", function() {
     resume_folder_open = !resume_folder_open;
@@ -91,10 +135,14 @@ resume_folder.addEventListener("click", function() {
         var chevron_down_image_path = "assets/svg/chevron down icon.svg";
                 
         resume_chevron_image.src = chevron_down_image_path;
+
+        resume_folder_contents.style.display = "flex";
     } else {
         var chevron_right_image_path = "assets/svg/chevron right icon.svg";
                 
         resume_chevron_image.src = chevron_right_image_path;
+
+        resume_folder_contents.style.display = "none";
     }
     // RESUME FOLDER IMAGE AND VISIBILITY START
 })
@@ -103,6 +151,7 @@ resume_folder.addEventListener("click", function() {
 // CONTACT ME FOLDER START
 var contact_me_folder_open = false;
 var contact_me_folder = document.getElementById("folder_button_contact_listener")
+var contact_me_folder_contents = document.getElementById("contact_folder_contents");
 
 contact_me_folder.addEventListener("click", function() {
     contact_me_folder_open = !contact_me_folder_open;
@@ -115,10 +164,14 @@ contact_me_folder.addEventListener("click", function() {
         var chevron_down_image_path = "assets/svg/chevron down icon.svg";
                 
         contact_me_chevron_image.src = chevron_down_image_path;
+
+        contact_me_folder_contents.style.display = "flex";
     } else {
         var chevron_right_image_path = "assets/svg/chevron right icon.svg";
                 
         contact_me_chevron_image.src = chevron_right_image_path;
+
+        contact_me_folder_contents.style.display = "none";
     }
     // RESUME FOLDER IMAGE AND VISIBILITY START
 })

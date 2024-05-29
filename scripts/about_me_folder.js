@@ -1,13 +1,31 @@
-// var folder_contents = document.getElementById("about_me_folder_contents");
-// var button = document.getElementById("folder_button_about_me_listener");
-// var showing_contents = false;
+// LANGS BIO BUTTON START
+var bio_button = document.getElementById("bio_button_listener");
 
-// button.addEventListener("click", function() {
-//     showing_contents = !showing_contents;
+bio_button.addEventListener("click", function() {
+    console.log("Bio button pressed");
+})
+// LANGS BIO BUTTON END
 
-//     if (showing_contents) {
-//         folder_contents.style.display = "flex";
-//     } else {
-//         folder_contents.style.display = "none";
-//     }
-// });
+// CAREER OBJECTIVE BUTTON START
+var career_button = document.getElementById("career_button_listener");
+
+career_button.addEventListener("click", function() {
+    console.log("Career Objective button pressed");
+})
+// CAREER OBJECTIVE BUTTON END
+
+// EDUCATION BUTTON START
+var education_button = document.getElementById("education_button_listener");
+
+education_button.addEventListener("click", function() {
+    console.log("Education button pressed");
+})
+// EDUCATION BUTTON END
+
+// LEADERSHIP BUTTON START
+var leadership_button = document.getElementById("leadership_button_listener");
+
+leadership_button.addEventListener("click", function() {
+    console.log("Leadership button pressed");
+})
+// LEADERSHIP BUTTON END
