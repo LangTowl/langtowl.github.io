@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ViewControllerService } from '../../../services/view-controler/view-controller.service';
 
 @Component({
   selector: 'app-landing-page',
@@ -7,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class LandingPageComponent {
 
+  constructor(
+    private view_controller_service: ViewControllerService
+  ) { }
+
+  /* Class methods */
+  updateNavBarState(new_state: boolean): void {
+    this.view_controller_service.updateNavBarState(new_state);
+  }
 }
