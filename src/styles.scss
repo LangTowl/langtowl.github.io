@@ -1,1 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    --leading: #1B2640;
+    --middle: #321D39;
+    --trailing: #401A35;
+    --accent: #FFA500;
+}
+
+
+body {
+    background-image: linear-gradient(to right, var(--leading), var(--middle), var(--trailing));
+
+    font-family: 'Lato', sans-serif;
+}
