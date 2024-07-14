@@ -1,1 +1,32 @@
-<p>nav-bar works!</p>
+<div class="container">
+    <div class="home-button" (click)="homeButton()" routerLink="">
+        <img src="../../../assets/svg/lato-small.svg" alt="">
+    </div>
+
+
+    <div class="button-row">
+        <button id="about-me" (click)="aboutMeButton()">
+            About Me
+        </button>
+
+        <button id="projects" (click)="projectsButton()">
+            Projects
+        </button>
+
+        <button id="work-experience" (click)="workExperienceButton()">
+            Work Experience
+        </button>
+
+        <button id="resume" (click)="resumeButton()">
+            Resume
+        </button>
+
+        <button id="contact-me" (click)="contactmeButton()">
+            Contact Me
+        </button>
+    </div>
+
+    <div class="empty-div">
+        
+    </div>
+</div>

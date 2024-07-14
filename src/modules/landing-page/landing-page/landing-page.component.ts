@@ -14,6 +14,7 @@ export class LandingPageComponent {
 
   /* Class methods */
   updateNavBarState(new_state: boolean): void {
+    console.log("Navigating to: about-me");
     this.view_controller_service.updateNavBarState(new_state);
   }
 }
