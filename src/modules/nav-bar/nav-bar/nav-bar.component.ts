@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
-import { ViewControllerService } from '../../../services/view-controler/view-controller.service';
+import { Component, OnInit } from '@angular/core';
+import { NavBarItems, ViewControllerService } from '../../../services/view-controler/view-controller.service';
+import { NavControllerService } from '../../../services/nav-controller/nav-controller.service';
 
 @Component({
   selector: 'app-nav-bar',
@@ -7,41 +8,27 @@ import { ViewControllerService } from '../../../services/view-controler/view-con
   styleUrl: './nav-bar.component.scss'
 })
 export class NavBarComponent {
+  // Class fields
+  nav_buttons: any;
 
     constructor(
+      private nav_controller_service: NavControllerService,
       private view_controller_service: ViewControllerService
     ) {}
 
+    ngOnInit(): void {
+      this.nav_buttons = this.view_controller_service.fetchNavButtons();
+    }
+
     /* Class methods */
 
-    // Routine to run when home button pressed
-    homeButton() {
-      console.log("Navigating to: home");
-      this.view_controller_service.updateNavBarState(false);
+    // Hides nav bar
+    homeButtonPressed(): void {
+      this.nav_controller_service.homeButtonPressed();
     }
 
-    // Routine to run when about me button pressed
-    aboutMeButton() {
-      console.log("Navigating to: about-me");
-    }
-
-    // Routine to run when projects button pressed
-    projectsButton() {
-      console.log("Navigating to: projects");
-    }
-
-    // Routine to run when work experience button pressed
-    workExperienceButton() {
-      console.log("Navigating to: work-experience");
-    }
-
-    // Routine to run when resume button pressed
-    resumeButton() {
-      console.log("Navigating to: resume");
-    }
-
-    // Routine to run when contact me button pressed
-    contactmeButton() {
-      console.log("Navigating to: contact-me");
+    // Updates view controller with new tab
+    navButtonPressed(tab: NavBarItems): void {
+      this.nav_controller_service.navButtonPressed(tab);
     }
 }

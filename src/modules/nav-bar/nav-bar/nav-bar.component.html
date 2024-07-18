@@ -1,32 +1,11 @@
 <div class="container">
-    <div class="home-button" (click)="homeButton()" routerLink="">
+    <div class="home-button" routerLink="" (click)="homeButtonPressed()">
         <img src="../../../assets/svg/lato-small.svg" alt="">
     </div>
 
-
-    <div class="button-row">
-        <button id="about-me" (click)="aboutMeButton()">
-            About Me
-        </button>
-
-        <button id="projects" (click)="projectsButton()">
-            Projects
-        </button>
-
-        <button id="work-experience" (click)="workExperienceButton()">
-            Work Experience
-        </button>
-
-        <button id="resume" (click)="resumeButton()">
-            Resume
-        </button>
-
-        <button id="contact-me" (click)="contactmeButton()">
-            Contact Me
-        </button>
+    <div class="button-row" *ngFor="let item of nav_buttons; let i = index">
+        <button (click)="navButtonPressed(item.label)"> {{ item.label }} </button>
     </div>
 
-    <div class="empty-div">
-        
-    </div>
-</div>
+    <div class="empty-div"></div>
+</div> 
