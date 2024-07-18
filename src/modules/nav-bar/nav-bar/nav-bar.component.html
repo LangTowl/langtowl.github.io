@@ -3,8 +3,10 @@
         <img src="../../../assets/svg/lato-small.svg" alt="">
     </div>
 
-    <div class="button-row" *ngFor="let item of nav_buttons; let i = index">
-        <button (click)="navButtonPressed(item.label)"> {{ item.label }} </button>
+    <div class="button-row-container">
+        <div class="button-row" *ngFor="let item of nav_buttons; let i = index">
+            <button (click)="navButtonPressed(item.label)"> {{ item.label }} </button>
+        </div>
     </div>
 
     <div class="empty-div"></div>
