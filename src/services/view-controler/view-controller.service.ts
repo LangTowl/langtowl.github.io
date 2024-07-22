@@ -51,4 +51,9 @@ export class ViewControllerService {
     
     console.log("Navigating to:", this.active_tab);
   }
+
+  // Fetch current active tab 
+  fetchCurrentActiveTab(): NavBarItems {
+    return this.active_tab;
+  }
 }

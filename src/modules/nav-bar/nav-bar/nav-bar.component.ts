@@ -31,4 +31,13 @@ export class NavBarComponent {
     navButtonPressed(tab: NavBarItems): void {
       this.nav_controller_service.navButtonPressed(tab);
     }
+
+    // Updates ui for active post
+  textColor(target: NavBarItems): string {
+    if (this.view_controller_service.fetchCurrentActiveTab() == target) {
+      return 'rgba(255, 255, 255, 1)';
+    }
+
+    return 'rgba(255, 255, 255, 0.5)';
+  }
 }

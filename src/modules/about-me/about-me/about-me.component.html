@@ -1,1 +1,28 @@
-<p>about-me works!</p>
+<div class="container">
+    <div class="header-row">
+        <div class="left-items">
+            <!-- TODO: Update headshot from placeholder svg -->
+            <img src="../../../assets/svg/debug-svg/person.circle.svg" alt="headshot">
+
+            <p>{{ aboutMePosts[currentPost].title }} </p>
+        </div>
+
+        <div class="page-navigator">
+            <div *ngFor="let button of aboutMePosts; let i = index">
+                <button (click)="updateCurrentPost(i)" [ngStyle]="{'color': textColor(i)}"> {{ button.title }} </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="current-content">
+        <p>{{ aboutMePosts[currentPost].content }}</p>
+
+        <div class="ticker-buttons">
+            <div>
+                <!-- TODO: Figure out how to change the color of the svg -->
+                <button (click)="tickerButton('down')"><img src="../../../assets/svg/chevron.down.svg" alt="chevron down"></button>
+                <button (click)="tickerButton('up')"><img src="../../../assets/svg/chevron.up.svg" alt="chevron up"></button>
+            </div>
+        </div>
+    </div>
+</div>
