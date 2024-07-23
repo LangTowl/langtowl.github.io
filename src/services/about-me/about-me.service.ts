@@ -12,22 +12,25 @@ export class AboutMeService {
   // Class fields
   private about_me_posts: AboutMePost[] = [
     {
-      title: 'Langs Bio', 
-      content: 'Langs Bio Placeholder'
+      title: 'Langs Bio',
+      content: `I grew up surfing year-round in the frigid waters of Maine and New England. Living on this pristine coast fostered a deep respect for nature and the marine ecosystems on which our modern world depends. This connection to the ocean inspired me to pursue a STEM education to one day apply these skills to initiatives focused on environmental preservation. 
+      
+      While I still care deeply about the ocean, my interests have evolved into different STEM applications. I have always been fascinated by difficult technical problems and the bright minds who solve them. Few industries have to solve more complex problems than the aerospace and defense industry. I aspire to work within a team of engineers tackling such problems, allowing me to grow my skills in software development, hardware design, and sustainability.`
     },
     {
-      title: 'Career Objective', 
+      title: 'Career Objective',
       content: 'Career Objective Placeholder'
     },
     {
-      title: 'Work Experience', 
+      title: 'Work Experience',
       content: 'Work Experience Placeholder'
     },
     {
-      title: 'Education', 
+      title: 'Education',
       content: 'Education Placeholder'
     }
   ];
+  
   private current_post: number = 0;
   
 
