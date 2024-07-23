@@ -15,14 +15,13 @@
     </div>
 
     <div class="current-content">
-        <p>{{ aboutMePosts[currentPost].content }}</p>
+        <div class="content">{{ aboutMePosts[currentPost].content }}</div>
+    </div>
 
-        <div class="ticker-buttons">
-            <div>
-                <!-- TODO: Figure out how to change the color of the svg -->
-                <button (click)="tickerButton('down')"><img src="../../../assets/svg/chevron.down.svg" alt="chevron down"></button>
-                <button (click)="tickerButton('up')"><img src="../../../assets/svg/chevron.up.svg" alt="chevron up"></button>
-            </div>
+    <div class="ticker-buttons">
+        <div class="ticker-buttons-container">
+            <button (click)="tickerButton('down')"><img src="../../../assets/svg/chevron.down.svg" alt="chevron down"></button>
+            <button (click)="tickerButton('up')"><img src="../../../assets/svg/chevron.up.svg" alt="chevron up"></button>
         </div>
     </div>
 </div>
