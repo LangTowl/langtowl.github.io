@@ -6,7 +6,7 @@
             <p>{{ aboutMePosts[currentPost].title }} </p>
         </div>
 
-        <div class="page-navigator">
+        <div class="page-navigator" *ngIf="fetchScreenWidth() > 900">
             <div *ngFor="let button of aboutMePosts; let i = index">
                 <button (click)="updateCurrentPost(i)" [ngStyle]="{'color': textColor(i)}"> {{ button.title }} </button>
             </div>

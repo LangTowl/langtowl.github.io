@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { ViewControllerService } from '../../../services/view-controler/view-controller.service';
 import { AboutMePost, AboutMeService } from '../../../services/about-me/about-me.service';
 
@@ -8,15 +8,20 @@ import { AboutMePost, AboutMeService } from '../../../services/about-me/about-me
   styleUrl: './about-me.component.scss'
 })
 export class AboutMeComponent {
+  // Class fields
+  private screen_width: number = -1;
 
   constructor(
     private view_controller_service: ViewControllerService,
     private about_me_service: AboutMeService
-  ) { }
+  ) {
+    this.screen_width = window.innerWidth;
+  }
 
   ngOnInit() {
     // Ensures that if reload happens on non home screen, nav bar is showing
     this.view_controller_service.updateNavBarState(true);
+    this.updateScreenWidth();
   }
 
   /* Component methods */
@@ -54,5 +59,27 @@ export class AboutMeComponent {
     } else if (action == 'up' && this.currentPost > 0) {
       this.updateCurrentPost(temp -= 1);
     }
+  }
+
+  // Update screen width
+  updateScreenWidth() {
+    this.screen_width = window.innerWidth;
+    // console.log(this.screen_width);
+  }
+
+  // Calls update screen width upon window reshape
+  @HostListener('window:resize', ['$event'])
+  onResize(event: any) {
+    this.updateScreenWidth();
+  }
+
+  // Fetch screen width
+  fetchScreenWidth(): number {
+    return this.screen_width;
+  }
+
+  // Determines home button route
+  homeButtonRout(): string | null {
+    return this.screen_width > 1150 ? '' : null;
   }
 }
