@@ -94,6 +94,24 @@
     }   
 }
 
+@media (max-width: 1150px) {
+    :host {
+        .button-container {
+            width: 100%;
+
+            margin-top: 25px;
+
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            button {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 850px) {
     :host {
         .container {
@@ -104,20 +122,6 @@
 
                 p {
                     font-size: 1.5rem;
-                }
-
-                .button-container {
-                    width: 100%;
-
-                    margin-top: 25px;
-
-                    display: flex;
-                    justify-content: space-around;
-                    align-items: center;
-
-                    button {
-                        font-size: 1.5rem;
-                    }
                 }
             }
         }
