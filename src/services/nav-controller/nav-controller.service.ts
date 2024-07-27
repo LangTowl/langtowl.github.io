@@ -5,6 +5,8 @@ import { NavBarItems, ViewControllerService } from '../view-controler/view-contr
   providedIn: 'root'
 })
 export class NavControllerService {
+  // class fields
+  private show_drop_down: boolean = false;
 
   constructor(
     private view_controller_service: ViewControllerService
@@ -20,5 +22,15 @@ export class NavControllerService {
   // Updates view controller with new tab
   navButtonPressed(tab: NavBarItems): void {
     this.view_controller_service.updateNavBarItem(tab);
+  }
+
+  // Update drow down menue state
+  updateDrowDownState(state: boolean): void {
+    this.show_drop_down = state;
+  }
+
+  // Fetch drow down menu state
+  fetchDrowDownState(): boolean {
+    return this.show_drop_down;
   }
 }

@@ -1,3 +1,12 @@
+<div class="overlay-container"  *ngIf="fetchDropDownState() == true" (click)="popoverClickOutButton()">
+    <div class="drop-down-menu">
+        <div class="button-row" *ngFor="let item of nav_buttons; let i = index">
+            <button (click)="navButtonPressed(item.label)" [ngStyle]="{'color': textColor(item.label)}"> {{ item.label }} </button>
+        </div>
+    </div>
+</div>
+
+
 <div class="container">
     <div class="home-button" [routerLink]="homeButtonRout()" (click)="homeButtonPressed()">
         <img src="../../../assets/svg/lato-small.svg" alt="">

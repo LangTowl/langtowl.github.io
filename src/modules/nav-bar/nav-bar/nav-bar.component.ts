@@ -30,6 +30,8 @@ export class NavBarComponent {
   homeButtonPressed(): void {
     if (this.screen_width > 1150) {
       this.nav_controller_service.homeButtonPressed();
+    } else {
+      this.updateDropDownState(true);
     }
   }
 
@@ -67,5 +69,20 @@ export class NavBarComponent {
   // Determines home button route
   homeButtonRout(): string | null {
     return this.screen_width > 1150 ? '' : null;
+  }
+
+  // Fetch drop down menu state
+  fetchDropDownState(): boolean {
+    return this.nav_controller_service.fetchDrowDownState();
+  }
+
+  // Update drop down menu state
+  updateDropDownState(state: boolean): void {
+    this.nav_controller_service.updateDrowDownState(state);
+  }
+
+  // Routine to close popover when background is clicked
+  popoverClickOutButton(): void {
+    this.nav_controller_service.updateDrowDownState(false);
   }
 }
