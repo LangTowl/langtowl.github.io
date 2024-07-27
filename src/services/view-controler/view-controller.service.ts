@@ -31,8 +31,8 @@ export class ViewControllerService {
   updateNavBarState(new_state: boolean): void {
     this.nav_bar_state = new_state;
 
-    console.log("Showing nav bar: ", this.nav_bar_state);
-    console.log("Navigating to:", this.active_tab);
+    // console.log("Showing nav bar: ", this.nav_bar_state);
+    // console.log("Navigating to:", this.active_tab);
   }
 
   // Fetch current nav bar state

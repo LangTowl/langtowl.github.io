@@ -1,9 +1,9 @@
 <div class="container">
-    <div class="home-button" routerLink="" (click)="homeButtonPressed()">
+    <div class="home-button" [routerLink]="homeButtonRout()" (click)="homeButtonPressed()">
         <img src="../../../assets/svg/lato-small.svg" alt="">
     </div>
 
-    <div class="button-row-container">
+    <div class="button-row-container" *ngIf="fetchScreenWidth() > 1150">
         <div class="button-row" *ngFor="let item of nav_buttons; let i = index">
             <button (click)="navButtonPressed(item.label)" [ngStyle]="{'color': textColor(item.label)}"> {{ item.label }} </button>
         </div>
