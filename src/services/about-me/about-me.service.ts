@@ -20,10 +20,6 @@ export class AboutMeService {
       content: 'I am a junior studying computer engineering concentrated in machine intelligence. I am currently pursuing a summer 2024 internship in the aerospace and defense industry where I can apply my skills in software development, hardware design, and sustainability.'
     },
     {
-      title: 'Work Experience',
-      content: 'Work experience needs work haha'
-    },
-    {
       title: 'Education',
       content: 'I am currently a first semester senior studying computer engineering at Florida Polytechnic University. This ABET accredited degree is concentrated in machine intelligence. Topics in this concentration include but are not limited to: digital image processing, neural networks and applications, mixed hardware-software systems, and machine learning hardware.'
     }
