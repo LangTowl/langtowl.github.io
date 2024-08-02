@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { LandingPageModule } from '../modules/landing-page/landing-page.module';
 import { AboutMeModule } from '../modules/about-me/about-me.module';
 import { NavBarModule } from '../modules/nav-bar/nav-bar.module';
+import { ProjectsModule } from '../modules/projects/projects.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { NavBarModule } from '../modules/nav-bar/nav-bar.module';
     AppRoutingModule,
     LandingPageModule,
     AboutMeModule,
-    NavBarModule
+    NavBarModule,
+    ProjectsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
