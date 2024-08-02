@@ -64,7 +64,7 @@
 
         .drop-down-menu {
 
-            width: 50%;
+            width: 75%;
     
             background-color: rgba(50, 50, 50, 0.3); 
             backdrop-filter: blur(100px); 
@@ -101,6 +101,18 @@
                 button:active {
                     color: rgba(255, 255, 255, 1.0);
                 }
+            }
+        }
+    }
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 850px) {
+    :host {
+        .overlay-container {
+            .drop-down-menu {
+                width: 90%;
             }
         }
     }
