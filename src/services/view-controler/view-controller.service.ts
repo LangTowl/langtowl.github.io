@@ -30,9 +30,6 @@ export class ViewControllerService {
   // Update nav bar state with passed boolean
   updateNavBarState(new_state: boolean): void {
     this.nav_bar_state = new_state;
-
-    // console.log("Showing nav bar: ", this.nav_bar_state);
-    // console.log("Navigating to:", this.active_tab);
   }
 
   // Fetch current nav bar state

@@ -1,5 +1,5 @@
 import { Component, OnInit, HostListener } from '@angular/core';
-import { ViewControllerService } from '../../../services/view-controler/view-controller.service';
+import { NavBarItems, ViewControllerService } from '../../../services/view-controler/view-controller.service';
 import { AboutMePost, AboutMeService } from '../../../services/about-me/about-me.service';
 
 @Component({
@@ -19,8 +19,9 @@ export class AboutMeComponent {
   }
 
   ngOnInit() {
-    // Ensures that if reload happens on non home screen, nav bar is showing
+    // Ensures that if reload happens on non home screen, nav bar is showing and showing the correct tab
     this.view_controller_service.updateNavBarState(true);
+    this.view_controller_service.updateNavBarItem(NavBarItems.AboutMe);
     this.updateScreenWidth();
   }
 
