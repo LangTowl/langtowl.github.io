@@ -24,5 +24,9 @@
     <div class="ticker-buttons-container">
         <button *ngIf="currentPost != aboutMePosts.length - 1" (click)="tickerButton('down')"><img src="../../../assets/svg/chevron.down.svg" alt="chevron down"></button>
         <button *ngIf="currentPost != 0" (click)="tickerButton('up')"><img src="../../../assets/svg/chevron.up.svg" alt="chevron up"></button>
+    
+        <div class="apendix">
+            <p>{{ currentPost + 1 }} / {{ aboutMePosts.length }}</p>
+        </div>
     </div>
 </div>

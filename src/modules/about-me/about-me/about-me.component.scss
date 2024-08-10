@@ -114,6 +114,32 @@
 
             pointer-events: all;
 
+            .apendix {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+
+                width: 100%;
+
+                position: absolute;
+
+                bottom: 50px;
+                right: 5px;
+
+                p {
+                    margin: 0;
+                    padding: 0;
+
+                    color: white;
+                    opacity: 0.5;
+                    font-size: 0.75rem;
+    
+                    bottom: 25px;
+
+                    white-space: nowrap;
+                }
+            }
+
             button {
                 all: unset;
 
