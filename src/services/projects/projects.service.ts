@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { Title } from '@angular/platform-browser';
 
 export interface ProjectPost {
   title: string,
@@ -32,7 +31,7 @@ This clone was created using Apples Swift & SwiftUI framework. The complete proj
     },
     {
       title: 'NXT SET',
-      images: ['../../../assets/svg/debug-svg/person.circle.svg'],
+      images: ['../../../assets/images/nxtset-screenshot.png'],
       content: `In the process of developing an IOS app targeted at high level athletes as well as personal trainers in the fitness industry. The app allows users to build a library of workouts that can be used to design unique training programs. In addition to program building, the app will collect data on lift completion, workout consistency, and eventually biometrics to quantify lift efficiency. The app packages this information in a user friendly interface that helps users reach progressive overload and mitigate plateaus.
 
 This project is nearing the stage of a minimum viable product, with plans of releasing a beta to a small group of testers.
@@ -43,36 +42,48 @@ This project was built using Apples Swift & SwiftUI framework. `,
     },
     {
       title: 'langtowl.com',
-      images: ['../../../assets/svg/debug-svg/person.circle.svg'],
-      content: `This website was made primary to serve as a companion to my resume, in addition to being an opportunity to improve my skills in web development. The front end of this site is written using Angular JS, TypeScript, HTML, and SCSS. It is hosted on GitHub pages, with plans of a migration to AWS *******.`,
+      images: ['../../../assets/svg/angular-icon.svg'],
+      content: `This website was made primary to serve as a companion to my resume, in addition to being an opportunity to improve my skills in web development. The front end of this site is written using Angular JS, TypeScript, HTML, and SCSS. It is hosted on GitHub pages, with plans of a migration to AWS Amplify.`,
       link_label: '',
       link: ''
     },
     {
       title: 'Verilog Stop Watch',
-      images: ['../../../assets/svg/debug-svg/person.circle.svg'],
-      content: 'This is the content for project 5.',
+      images: ['../../../assets/svg/cpu-icon.svg'],
+      content: `This Verilog project was conducted in parallel with my Digital Logic Design course at university. The goal was to program a functional military-style stop-watch entirely from Verilog. The code was written and compiled using Quartus Prime before being uploaded to an FPGA for testing. The watches functionality was limited to a start, stop, and restart controls. The watch could count anywhere from 1 minute to 1 hour.
+
+The functionality of the watch was achieved by creating several Verilog modules such as a half and full adder, a ripple carry adder, a BCD controller, clock divider, D and T flip-flop, 4-bit register, and the LCD controller. The complete code can be found at the link to my GitHub below.`,
       link_label: '',
       link: ''
     },
     {
       title: 'Project T.Y.',
       images: ['../../../assets/svg/debug-svg/person.circle.svg'],
-      content: 'This is the content for project 6.',
+      content: `Project T.Y. (The Youth) was an initiative led by myself and several other youth ambassadors for Parley for the Oceans. Our goal was to produce a seven-episode documentary series that follows young athletes and activists from different indigenous communities around that Pacific. The series would pair exhilarating big wave surfing content, with actionable solutions to climate and pollution issues pioneered by these young activists.
+
+Viewers at home would follow along as each episode is focused on a different community in the pacific, highlighting the impacts of climate change and pollution. Episodes would conclude with steps viewers can take at home to participate in cleaner living, and how they can get involved in their own communities.
+
+Unfortunately, Project T.Y. was indefinetly put on hold due to the pandemic and travel restrictions in the region of interest.`,
       link_label: '',
       link: ''
     },
     {
       title: 'Keyboard Design',
-      images: ['../../../assets/svg/debug-svg/person.circle.svg'],
-      content: 'This is the content for project 7.',
+      images: ['../../../assets/svg/keyboard-icon.svg'],
+      content: `This project began when schools transitioned to online, and classes were being held virtually. When I found out I was going to be spending a lot more time at home, I decided to optimize my setup by designing a fully function mechanical keyboard using open-source components. The goal was to have different layers of functionality depending on the software or app being used.
+
+The PCB was designed using Autodesk’s Eagle CAD. THT components like diodes, resistors, switches, and other components were soldered to the board by hand. The microprocessor used to control the PCB was an Arduino Micro driven by an ATMEGA32-U4 chip. The software was written in Arduino’s modified C++ language.`,
       link_label: '',
       link: ''
     },
     {
       title: 'Manta Fin Co.',
       images: ['../../../assets/svg/debug-svg/person.circle.svg'],
-      content: 'This is the content for project 8.',
+      content: `Manta Fin Co. was a small startup that I worked on creating. The goal was to design and manufacture high performance surfboard fins out of upcycled ocean plastics and distribute them to local shops in the Northeast. I had designed a fleet of several fins ranging from 3-fin thruster set ups, 4-fin quad setups, 2-fin twin setups, and a few longboard single fins.
+
+Each design was calibrated using the National Advisory Committee for Aeronautics airfoil database. The fins were modeled using Fusion 360’s surface modeling before being tested in SolidWork’s simulation engine. They would then be prototyped using either 3D printing or CNC milling, before being tested in the ocean.
+
+Manta Fin Co. was nearly ready for launch, we had begun the process of filing for an L.L.C and were working on setting up contracts with local surf shops. It was at this point when the cost of manufacturing using injection molding became inaccessible, so Manta Fin Co. had to be put on hold indefinetly.`,
       link_label: '',
       link: ''
     },
