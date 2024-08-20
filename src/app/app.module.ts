@@ -7,6 +7,7 @@ import { LandingPageModule } from '../modules/landing-page/landing-page.module';
 import { AboutMeModule } from '../modules/about-me/about-me.module';
 import { NavBarModule } from '../modules/nav-bar/nav-bar.module';
 import { ProjectsModule } from '../modules/projects/projects.module';
+import { WorkExperienceModule } from '../modules/work-experience/work-experience.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ProjectsModule } from '../modules/projects/projects.module';
     LandingPageModule,
     AboutMeModule,
     NavBarModule,
-    ProjectsModule
+    ProjectsModule,
+    WorkExperienceModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -25,9 +25,19 @@
         </div>
     </div>
 
+    <div class="skills-learned"> 
+        <p id="skills">Skills Learned</p>
+
+        <div class="list-items" *ngFor="let skill of projectPosts[currentPost].skills_learned; let i = index">
+            <p><span>{{ i + 1 }}.</span> {{ skill }} </p>
+        </div>
+    </div>
+
     <div class="external-link" *ngIf="projectPosts[currentPost].link != ''">
         <a href="/"> {{ projectPosts[currentPost].link_label }} </a>
     </div>
+
+    <div class="bottom-buffer"></div>
 </div>
 
 <div class="ticker-buttons">

@@ -18,6 +18,12 @@
             <p>{{ aboutMePosts[currentPost].content }}</p>
         </div>
     </div>
+
+    <div class="post-lists" *ngIf="aboutMePosts[currentPost].list.length != 0">
+        <div class="list-item" *ngFor="let item of aboutMePosts[currentPost].list; let i = index">
+            <p><span>{{ i + 1 }}.</span> {{ item }} </p>
+        </div>
+    </div>
 </div>
 
 <div class="ticker-buttons">

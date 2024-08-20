@@ -5,6 +5,10 @@
         margin-left: 30px;
         margin-right: 30px;
 
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
         .header-row {    
             display: flex;
             justify-content: space-between;
@@ -83,8 +87,31 @@
                 white-space: pre-wrap;
 
                 margin-top: 30px;
-                margin-bottom: 200px;
             }
+        }
+    }
+
+    .post-lists {
+        color: white;
+
+        margin-left: 60px;
+
+        font-size: 1.75rem;
+
+        margin-bottom: 200px;
+
+        p {
+            margin: 0;
+            padding: 0;
+
+            span {
+                color: var(--accent);
+            }
+        }
+
+        .list-item {
+            margin-left: 30px;
+            margin-bottom: 10px;
         }
     }
 
@@ -219,6 +246,13 @@
                         padding: 0;
                     }
                 }
+            }
+
+            .post-lists {
+                margin: 0;
+                padding: 0;
+
+                margin-top: 15px;
             }
         }
     }

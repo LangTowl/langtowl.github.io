@@ -6,6 +6,7 @@ export interface ProjectPost {
   content: string,
   link_label: string,
   link: string
+  skills_learned: string[]
 }
 
 @Injectable({
@@ -24,10 +25,14 @@ export class ProjectsService {
       content: 
       `A Prettier Wordle is a clone of the popular New York Times game Wordle. It functions in nearly the same way: one five letter word is chosen at random from a list of 2,317, users then have six guesses to determine what the word is. After each guess the game board and keyboard update to indicate which letters in their guess match the mystery word. This clone features a modern twist with a unique UI, while still preserving the core functionality of the game.
       
-This clone was created using Apples Swift & SwiftUI framework. The complete project can be found using the GitHub link below.
-      `,
+This clone was created using Apples Swift & SwiftUI framework. The complete project can be found using the GitHub link below.`,
       link_label: 'Link To GitHub Repository',
-      link: '/'
+      link: '/',
+      skills_learned: [
+        `Further improvement with skills in Swift/SwiftUI.`,
+        `Experience cloning an already existing program.`,
+        `Building basic algorithems to complete simple tasks within a larger app architecture.`
+      ]
     },
     {
       title: 'NXT SET',
@@ -38,14 +43,24 @@ This project is nearing the stage of a minimum viable product, with plans of rel
 
 This project was built using Apples Swift & SwiftUI framework. `,
       link_label: '',
-      link: ''
+      link: '',
+      skills_learned: [
+        `Foundational skills in Apples Swift and SwiftUI languages.`,
+        `User interface design for IOS apps.`,
+        `Foundational full stack development for the iOS ecosystem.`
+      ]
     },
     {
       title: 'langtowl.com',
       images: ['../../../assets/svg/angular-icon.svg'],
       content: `This website was made primary to serve as a companion to my resume, in addition to being an opportunity to improve my skills in web development. The front end of this site is written using Angular JS, TypeScript, HTML, and SCSS. It is hosted on GitHub pages, with plans of a migration to AWS Amplify.`,
       link_label: '',
-      link: ''
+      link: '',
+      skills_learned: [
+        `Foundational front end web development skills.`,
+        `Source control practices.`,
+        `Designing reactive web applications.`
+      ]
     },
     {
       title: 'Verilog Stop Watch',
@@ -54,18 +69,28 @@ This project was built using Apples Swift & SwiftUI framework. `,
 
 The functionality of the watch was achieved by creating several Verilog modules such as a half and full adder, a ripple carry adder, a BCD controller, clock divider, D and T flip-flop, 4-bit register, and the LCD controller. The complete code can be found at the link to my GitHub below.`,
       link_label: '',
-      link: ''
+      link: '',
+      skills_learned: [
+        `Intermediate Verilog programming.`,
+        `How to design hardware components at the transistor level.`,
+        `How to write and implement modular Verilog code that interfaces with FPGAs.`
+      ]
     },
     {
       title: 'Project T.Y.',
-      images: ['../../../assets/svg/debug-svg/person.circle.svg'],
+      images: ['../../../assets/images/parley-image.png'],
       content: `Project T.Y. (The Youth) was an initiative led by myself and several other youth ambassadors for Parley for the Oceans. Our goal was to produce a seven-episode documentary series that follows young athletes and activists from different indigenous communities around that Pacific. The series would pair exhilarating big wave surfing content, with actionable solutions to climate and pollution issues pioneered by these young activists.
 
 Viewers at home would follow along as each episode is focused on a different community in the pacific, highlighting the impacts of climate change and pollution. Episodes would conclude with steps viewers can take at home to participate in cleaner living, and how they can get involved in their own communities.
 
 Unfortunately, Project T.Y. was indefinetly put on hold due to the pandemic and travel restrictions in the region of interest.`,
       link_label: '',
-      link: ''
+      link: '',
+      skills_learned: [
+        `Collaboration within a multi-national organization.`,
+        `Sustainable practices on both small- and large- scale projects.`,
+        `How to create and manage the production of pitch decks for larger projects.`
+      ]
     },
     {
       title: 'Keyboard Design',
@@ -74,18 +99,28 @@ Unfortunately, Project T.Y. was indefinetly put on hold due to the pandemic and 
 
 The PCB was designed using Autodesk’s Eagle CAD. THT components like diodes, resistors, switches, and other components were soldered to the board by hand. The microprocessor used to control the PCB was an Arduino Micro driven by an ATMEGA32-U4 chip. The software was written in Arduino’s modified C++ language.`,
       link_label: '',
-      link: ''
+      link: '',
+      skills_learned: [
+        `Hardware and software design process and prototyping.`,
+        `PCB design, fabrication, and optimization.`,
+        `C++ programming and optimization.`
+      ]
     },
     {
       title: 'Manta Fin Co.',
-      images: ['../../../assets/svg/debug-svg/person.circle.svg'],
+      images: ['../../../assets/svg/manta-icon.svg'],
       content: `Manta Fin Co. was a small startup that I worked on creating. The goal was to design and manufacture high performance surfboard fins out of upcycled ocean plastics and distribute them to local shops in the Northeast. I had designed a fleet of several fins ranging from 3-fin thruster set ups, 4-fin quad setups, 2-fin twin setups, and a few longboard single fins.
 
 Each design was calibrated using the National Advisory Committee for Aeronautics airfoil database. The fins were modeled using Fusion 360’s surface modeling before being tested in SolidWork’s simulation engine. They would then be prototyped using either 3D printing or CNC milling, before being tested in the ocean.
 
 Manta Fin Co. was nearly ready for launch, we had begun the process of filing for an L.L.C and were working on setting up contracts with local surf shops. It was at this point when the cost of manufacturing using injection molding became inaccessible, so Manta Fin Co. had to be put on hold indefinetly.`,
       link_label: '',
-      link: ''
+      link: '',
+      skills_learned: [
+        `Surface modeling in Fusion 360. 3D modeling and testing using SolidWorks. Aerodynamic calculations using Microsoft Excel.`,
+        `3D printing and CNC milling techniques.`,
+        `Basic small business setup and management practices.`
+      ]
     },
   ]
 

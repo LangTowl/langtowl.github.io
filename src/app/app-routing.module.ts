@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { LandingPageComponent } from '../modules/landing-page/landing-page/landing-page.component';
 import { AboutMeComponent } from '../modules/about-me/about-me/about-me.component';
 import { ProjectsComponent } from '../modules/projects/projects/projects.component';
+import { WorkExperienceComponent } from '../modules/work-experience/work-experience/work-experience.component';
 
 const routes: Routes = [
   {
@@ -13,6 +14,9 @@ const routes: Routes = [
   },
   {
     path: 'projects', component: ProjectsComponent
+  },
+  {
+    path: 'work-experience', component: WorkExperienceComponent
   }
 ];
 
