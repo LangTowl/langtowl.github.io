@@ -1,1 +1,38 @@
-<p>work-experience works!</p>
+<div class="container">
+    <div class="header-row">
+        <div class="left-items">
+            <img [src]="workPosts[currentPost].company_logo" alt="">
+            <p><span id="company">{{ workPosts[currentPost].company }}</span><span id="position">{{ workPosts[currentPost].position }}</span></p>
+        </div>
+
+        <div class="page-navigator">
+            <div *ngFor="let post of workPosts; let i = index">
+                <button> {{ post.position }} </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="employement-duration">
+        <p>{{ workPosts[currentPost].employement_duration }}</p>
+    </div>
+
+    <div class="current-content">
+       <div class="content">
+            <p>{{ workPosts[currentPost].content }}</p>
+       </div>
+    </div>
+
+    <div class="skills-applied"> 
+        <p id="skills">Skills applied</p>
+
+        <div class="list-items" *ngFor="let skill of workPosts[currentPost].skills; let i = index">
+            <p><span>{{ i + 1 }}.</span> {{ skill }} </p>
+        </div>
+    </div>
+
+    <div class="images">
+        <div class="canvas" *ngFor="let image of workPosts[currentPost].images">
+            <img [src]="image" alt="">
+        </div>
+    </div>
+</div>
