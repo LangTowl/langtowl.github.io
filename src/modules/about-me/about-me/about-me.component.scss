@@ -89,6 +89,13 @@
                 margin-top: 30px;
             }
         }
+
+        .bottom-buffer {
+            height: 200px;
+            width: 100%;
+
+            color: transparent;
+        }
     }
 
     .post-lists {
@@ -238,8 +245,6 @@
                 .content {
                     padding-left: 10px;
                     padding-right: 10px;
-
-                    text-align: center;
 
                     p {
                         margin: 0;
