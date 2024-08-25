@@ -2,10 +2,11 @@
     <div class="header-row">
         <div class="left-items">
             <img [src]="workPosts[currentPost].company_logo" alt="">
-            <p><span id="company">{{ workPosts[currentPost].company }}</span><span id="position">{{ workPosts[currentPost].position }}</span></p>
+            <p><span id="company">{{ workPosts[currentPost].company }}</span></p>
+            <p><span id="position">{{ workPosts[currentPost].position }}</span></p>
         </div>
 
-        <div class="page-navigator">
+        <div class="page-navigator" *ngIf="fetchScreenWidth() > 900">
             <div *ngFor="let post of workPosts; let i = index">
                 <button> {{ post.position }} </button>
             </div>
