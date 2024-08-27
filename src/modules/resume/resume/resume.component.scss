@@ -11,6 +11,8 @@
             display: flex;
             align-items: center;
 
+            z-index: -1;
+
             img {
                 margin-right: 15px;
                 opacity: 0.5;
@@ -41,8 +43,12 @@
             backdrop-filter: blur(10px); 
             border-radius: 25px;
 
+            z-index: -1;
+
             img {
                 width: 75vw;
+
+                z-index: -1;
             }
         }
 
@@ -56,8 +62,8 @@
 }
 
 /* Media Queries */
-@media only screen and (max-width: 1150px) {
-    .resume-container {
-        display: none;
-    }
-}
+// @media only screen and (max-width: 1150px) {
+//     .resume-container {
+//         display: none;
+//     }
+// }

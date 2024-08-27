@@ -10,6 +10,8 @@
     margin-left: 10px;
     margin-right: 10px;
 
+    z-index: -1;
+
     .link-container {
         width: 500px;
 
@@ -41,6 +43,8 @@
                 font-size: 1.5rem;
                 color: white;
                 opacity: 0.5;
+
+                z-index: -1;
             }
         }
 
@@ -69,6 +73,8 @@
                 font-size: 1.5rem;
                 color: white;
                 opacity: 0.5;
+
+                z-index: -1;
             }
         }
 
@@ -77,6 +83,8 @@
 
             a {
                 opacity: 1;
+
+                z-index: -1;
             }
         }
     }
@@ -112,6 +120,8 @@
                     font-size: 1.5rem;
                     color: white;
                     opacity: 0.5;
+
+                    z-index: -1;
                 }
             }
         }
