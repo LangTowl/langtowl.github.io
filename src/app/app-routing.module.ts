@@ -5,6 +5,7 @@ import { AboutMeComponent } from '../modules/about-me/about-me/about-me.componen
 import { ProjectsComponent } from '../modules/projects/projects/projects.component';
 import { WorkExperienceComponent } from '../modules/work-experience/work-experience/work-experience.component';
 import { ResumeComponent } from '../modules/resume/resume/resume.component';
+import { ContactComponent } from '../modules/contact/contact/contact.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,9 @@ const routes: Routes = [
   },
   {
     path: 'resume', component: ResumeComponent
+  },
+  {
+    path: 'contact-me', component: ContactComponent
   }
 ];
 
