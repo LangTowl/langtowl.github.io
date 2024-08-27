@@ -4,6 +4,7 @@ import { LandingPageComponent } from '../modules/landing-page/landing-page/landi
 import { AboutMeComponent } from '../modules/about-me/about-me/about-me.component';
 import { ProjectsComponent } from '../modules/projects/projects/projects.component';
 import { WorkExperienceComponent } from '../modules/work-experience/work-experience/work-experience.component';
+import { ResumeComponent } from '../modules/resume/resume/resume.component';
 
 const routes: Routes = [
   {
@@ -17,6 +18,9 @@ const routes: Routes = [
   },
   {
     path: 'work-experience', component: WorkExperienceComponent
+  },
+  {
+    path: 'resume', component: ResumeComponent
   }
 ];
 
