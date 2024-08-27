@@ -1,0 +1,69 @@
+@import '../../../styles.scss';
+
+:host {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        .open-resume {
+            display: flex;
+            align-items: center;
+
+            z-index: -1;
+
+            img {
+                margin-right: 15px;
+                opacity: 0.5;
+            }
+
+            p {
+                font-size: 1.5rem;
+                color: white;
+                opacity: 0.5;
+            }
+        }
+
+        .open-resume:hover {
+            cursor: pointer;
+
+            img {
+                opacity: 1;
+            }
+
+            p {
+                opacity: 1;
+            }
+        }
+
+        .resume-container {
+            padding: 25px;
+            background-color: rgba(50, 50, 50, 0.3); 
+            backdrop-filter: blur(10px); 
+            border-radius: 25px;
+
+            z-index: -1;
+
+            img {
+                width: 75vw;
+
+                z-index: -1;
+            }
+        }
+
+        .embed-pdf-message {
+            display: none;
+
+            font-size: 1.5rem;
+            color: white;
+        }
+    }
+}
+
+/* Media Queries */
+// @media only screen and (max-width: 1150px) {
+//     .resume-container {
+//         display: none;
+//     }
+// }

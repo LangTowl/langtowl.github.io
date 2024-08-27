@@ -1,0 +1,119 @@
+@import '../../../styles.scss';
+
+:host {
+    .container {
+        margin: 30px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .home-button {
+            img {
+                width: 85px;
+            }
+        }
+
+        .button-row-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            width: 900px;
+
+            .button-row {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+    
+                button {
+                    all: unset;
+    
+                    font-size: 1.5rem;
+    
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    padding-bottom: 2.5px;
+    
+                    color: rgba(255, 255, 255, 0.5);
+    
+                    border-bottom: 2px solid transparent;
+                }
+    
+                button:hover {
+                    cursor: pointer;
+                    border-bottom: 2px solid var(--accent);
+                }
+    
+                button:active {
+                    color: rgba(255, 255, 255, 1.0);
+                }
+            }
+        }
+    }
+
+    .overlay-container {
+        position: absolute;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        height: 100%;
+        width: 100%;
+
+        .drop-down-menu {
+
+            width: 75%;
+    
+            background-color: rgba(50, 50, 50, 0.5); 
+            backdrop-filter: blur(10px); 
+    
+            border-radius: 25px;
+    
+            .button-row {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+    
+                button {
+                    all: unset;
+    
+                    font-size: 1.5rem;
+    
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    padding-bottom: 2.5px;
+    
+                    margin: 25px;
+    
+                    color: rgba(255, 255, 255, 0.5);
+    
+                    border-bottom: 2px solid transparent;
+                }
+    
+                button:hover {
+                    cursor: pointer;
+                    border-bottom: 2px solid var(--accent);
+                }
+    
+                button:active {
+                    color: rgba(255, 255, 255, 1.0);
+                }
+            }
+        }
+    }
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 850px) {
+    :host {
+        .overlay-container {
+            .drop-down-menu {
+                width: 90%;
+            }
+        }
+    }
+}

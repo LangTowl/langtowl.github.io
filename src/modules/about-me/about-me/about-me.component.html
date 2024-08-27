@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="header-row">
+        <div class="left-items">
+            <img src="../../../assets/images/lato_headshot_circle.png" alt="Langs Headshot">
+
+            <p>{{ aboutMePosts[currentPost].title }} </p>
+        </div>
+
+        <div class="page-navigator" *ngIf="fetchScreenWidth() > 900">
+            <div *ngFor="let button of aboutMePosts; let i = index">
+                <button (click)="updateCurrentPost(i)" [ngStyle]="{'color': textColor(i)}"> {{ button.title }} </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="current-content">
+        <div class="content">
+            <p>{{ aboutMePosts[currentPost].content }}</p>
+        </div>
+    </div>
+
+    <div class="post-lists" *ngIf="aboutMePosts[currentPost].list.length != 0">
+        <div class="list-item" *ngFor="let item of aboutMePosts[currentPost].list; let i = index">
+            <p><span>{{ i + 1 }}.</span> {{ item }} </p>
+        </div>
+    </div>
+
+    <div class="bottom-buffer">Test</div>
+</div>
+
+<div class="ticker-buttons">
+    <div class="ticker-buttons-container">
+        <button *ngIf="currentPost != aboutMePosts.length - 1" (click)="tickerButton('down')"><img src="../../../assets/svg/chevron.down.svg" alt="chevron down"></button>
+        <button *ngIf="currentPost != 0" (click)="tickerButton('up')"><img src="../../../assets/svg/chevron.up.svg" alt="chevron up"></button>
+    
+        <div class="apendix">
+            <p>{{ currentPost + 1 }} / {{ aboutMePosts.length }}</p>
+        </div>
+    </div>
+</div>
