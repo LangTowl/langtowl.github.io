@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NavBarItems, ViewControllerService } from '../../../services/view-controler/view-controller.service';
+import { NavControllerService } from '../../../services/nav-controller/nav-controller.service';
 
 @Component({
   selector: 'app-resume',
@@ -20,6 +21,7 @@ export class ResumeComponent {
 
   // Class methods
   openPDF(): void {
-    window.open('../../../assets/resume/Lang_Towl_Resume.pdf')
+    console.log("Opening resume...");
+    window.open('../../../assets/resume/Lang_Towl_Resume.pdf');
   }
 }

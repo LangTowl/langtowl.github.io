@@ -27,7 +27,7 @@ export class ProjectsService {
       
 This clone was created using Apples Swift & SwiftUI framework. The complete project can be found using the GitHub link below.`,
       link_label: 'Link To GitHub Repository',
-      link: '/',
+      link: 'https://github.com/LangTowl/A-Prettier-Wordle',
       skills_learned: [
         `Further improvement with skills in Swift/SwiftUI.`,
         `Experience cloning an already existing program.`,
@@ -54,8 +54,8 @@ This project was built using Apples Swift & SwiftUI framework. `,
       title: 'langtowl.com',
       images: ['../../../assets/svg/angular-icon.svg'],
       content: `This website was made primary to serve as a companion to my resume, in addition to being an opportunity to improve my skills in web development. The front end of this site is written using Angular JS, TypeScript, HTML, and SCSS. It is hosted on GitHub pages, with plans of a migration to AWS Amplify.`,
-      link_label: '',
-      link: '',
+      link_label: 'Link To GitHub Repository',
+      link: 'https://github.com/LangTowl/langtowl.github.io',
       skills_learned: [
         `Foundational front end web development skills.`,
         `Source control practices.`,

@@ -34,7 +34,7 @@
     </div>
 
     <div class="external-link" *ngIf="projectPosts[currentPost].link != ''">
-        <a href="/"> {{ projectPosts[currentPost].link_label }} </a>
+        <a [href]="projectPosts[currentPost].link"> {{ projectPosts[currentPost].link_label }} </a>
     </div>
 
     <div class="bottom-buffer"></div>

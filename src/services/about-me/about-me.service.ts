@@ -19,7 +19,7 @@ export class AboutMeService {
     },
     {
       title: 'Career Objective',
-      content: 'I am a junior studying computer engineering concentrated in machine intelligence. I am currently pursuing a summer 2024 internship in the aerospace and defense industry where I can apply my skills in software development, hardware design, and sustainability.',
+      content: 'I am a senior studying computer engineering concentrated in machine intelligence. I am currently pursuing a summer 2024 internship in the aerospace and defense industry where I can apply my skills in software development, hardware design, and sustainability.',
       list: []
     },
     {
