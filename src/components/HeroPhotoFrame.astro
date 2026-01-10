@@ -1,0 +1,19 @@
+---
+import { Image } from 'astro:assets';
+import HeroImage from "../assets/images/hero_image.png"
+import CameraIcon from "../assets/svgs/camera.svg"
+---
+
+<div class="px-8">
+  <div class="relative inline-block">
+    <img src={HeroImage.src} class="block" />
+
+    <div class="absolute bottom-4 right-4 writing-mode-vertical-rl">
+        <div class="flex items-center gap-2">
+            <span class="text-xs tracking-widest uppercase opacity-80  rotate-180">PHOTO CREDITS HERE</span>
+
+            <CameraIcon class="rotate-270 w-7 opacity-80"/>
+        </div>
+    </div>
+  </div>
+</div>
